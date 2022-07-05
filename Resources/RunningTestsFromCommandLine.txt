@@ -1,0 +1,18 @@
+Requirement: The test suite must be able to run at least Chrome and Firefox (the browser
+must be switchable through the command line)
+
+Use Terminal in your IDE
+Chrome: robot -d Results -v BROWSER: chromium  Tests/AutomationHomework.robot
+Firefox: robot -d Results -v BROWSER: firefox  Tests/AutomationHomework.robot
+
+
+*********************************************************************************
+
+Running Test cases individually using Tags:
+Use Terminal in your IDE
+robot -d Results -i "Registration" Tests/AutomationHomework.robot
+robot -d Results -i "Search" Tests/AutomationHomework.robot
+robot -d Results -i "Add to cart" Tests/AutomationHomework.robot
+robot -d Results -i "Delete from cart" Tests/AutomationHomework.robot
+robot -d Results -i "Purchase" Tests/AutomationHomework.robot
+robot -d Results -i "Order reference" Tests/AutomationHomework.robot
